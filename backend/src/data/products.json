@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "anillo",
+        "price": 123,
+        "image": null,
+        "descripcion": "lorem jasjjsdajlfjhdsajfkldsfgerregeiodsv"
+    },
+    {
+        "id": 2,
+        "name": "joya",
+        "price": 123,
+        "image": null,
+        "descripcion": "lorem jasjjsdajlfjhdsajfkldsfgerregeiodsv"
+    },
+    {
+        "id": 3,
+        "name": "aro",
+        "price": 1324,
+        "image": null,
+        "descripcion": "lorem jasjjsdajlfjhdsajfkldsfgerregeiodsv"
+    },
+    {
+        "id": 4,
+        "name": "collar",
+        "price": 213,
+        "image": null,
+        "descripcion": "lorem jasjjsdajlfjhdsajfkldsfgerregeiodsv"
+    },
+    {
+        "id": 5,
+        "name": "pulsera",
+        "price": 1213,
+        "image": null,
+        "descripcion": "lorem jasjjsdajlfjhdsajfkldsfgerregeiodsv"
+    },
+    {
+        "id": 6,
+        "name": "anillo y aros",
+        "price": 1212,
+        "image": null,
+        "descripcion": "lorem jasjjsdajlfjhdsajfkldsfgerregeiodsv"
+    }
+]
