@@ -1,8 +1,8 @@
 import React from 'react'
 import {Outlet} from 'react-router-dom'
-import { Footer } from '../components/Footer'
-import { SideBar } from '../components/SideBar'
-import { TopBar } from '../components/TopBar'
+import { Footer } from '../components/root/Footer'
+import { SideBar } from '../components/root/SideBar'
+import { TopBar } from '../components/root/TopBar'
 
 export const Root = () => {
     return (

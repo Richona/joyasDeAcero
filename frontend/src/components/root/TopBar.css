@@ -1,0 +1,25 @@
+/* SECTION 1 */
+.topBar_section1{
+    width: 100%;
+    background-color: black;
+}
+
+.topBar_section1 a{
+    font-size: 10px;
+    color: white;
+}
+
+/* SECTION 2 */
+.topBar_section2{
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(234, 233, 233);
+}
+
+/* SECTION 3 */
+.topBar_section3{
+    padding: 10px;
+}
+.topBar_section3_img{
+    width: 100px;
+    height: 80px;
+}

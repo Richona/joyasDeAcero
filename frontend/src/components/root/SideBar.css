@@ -1,0 +1,17 @@
+.sideBar_ul{
+    position: fixed !important;
+    background-color: black;
+    width: calc(100% - 54px);
+}
+.sideBar_ul_none{
+    display: none;
+}
+.sideBar_salida{
+    color: white;
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+.sideBar_imgLogo{
+    padding: 0 20px;
+}

@@ -1,13 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import "./SideBar.css"
 
 export const SideBar = () => {
+    function buttonSideBar() {
+        document.getElementById("accordionSidebar").classList.toggle("sideBar_ul_none")
+    }
     return (
-        <ul className="navbar-nav bg-gradient sidebar sidebar-dark accordion azulFuerteFondo" id="accordionSidebar">
+        <ul className="navbar-nav bg-gradient sidebar sidebar-dark accordion sideBar_ul sideBar_ul_none" id="accordionSidebar" onClick={buttonSideBar}>
+            <li className='sideBar_salida'>
+                <p>X</p>
+            </li>
 
-            <Link className="sidebar-brand mb-5" to="/">
+            <hr className="sidebar-divider"/>
+            
+            <Link className="sideBar_imgLogo" to="/">
                 <div className="sidebar-brand-icon">
-                    <img className="w-100" style={{ height: "100px" }} src="/images/logoDashboard.png" alt="Buon Aseo" />
+                    <img className="w-100" style={{ height: "100px" }} src="/images/logoJoyasDeAcero.jpg" alt="Buon Aseo" />
                 </div>
             </Link>
 
