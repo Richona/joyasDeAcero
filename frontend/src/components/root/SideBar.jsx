@@ -7,8 +7,8 @@ export const SideBar = () => {
         document.getElementById("accordionSidebar").classList.toggle("sideBar_ul_none")
     }
     return (
-        <ul className="navbar-nav bg-gradient sidebar sidebar-dark accordion sideBar_ul sideBar_ul_none" id="accordionSidebar" onClick={buttonSideBar}>
-            <li className='sideBar_salida'>
+        <ul className="navbar-nav bg-gradient sidebar sidebar-dark accordion sideBar_ul sideBar_ul_none" id="accordionSidebar" >
+            <li className='sideBar_salida'onClick={buttonSideBar}>
                 <p>X</p>
             </li>
 

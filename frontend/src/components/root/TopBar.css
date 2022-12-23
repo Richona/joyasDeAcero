@@ -1,25 +1,72 @@
+
 /* SECTION 1 */
 .topBar_section1{
     width: 100%;
     background-color: black;
+    display: flex;
 }
 
 .topBar_section1 a{
-    font-size: 10px;
+    font-size: 11px;
     color: white;
 }
 
-/* SECTION 2 */
-.topBar_section2{
+/* SECTION 2 DIVIDIR */
+.topBar_section2Dividir{
     padding: 10px 0;
     border-bottom: 1px solid rgb(234, 233, 233);
 }
 
 /* SECTION 3 */
 .topBar_section3{
-    padding: 10px;
+    padding: 15px;
+    width: 100%;
 }
 .topBar_section3_img{
     width: 100px;
     height: 80px;
+}
+.topBar_section3_modalCart{
+    top: 17%;
+}
+.topBar_section3_formSearch{
+    display: none;
+}
+.topBar_section3_formSearch_input{
+    width: 100%;
+    box-shadow: 1px blue;
+}
+.topBar_section3_formSearch_input::placeholder{
+   padding-left: 4px;
+   font-size: 14px;
+}
+
+/* SECTION 4 */
+.topBar_section4, .topBar_section4Dividir{
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    .topBar_section1 nav{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* SECTION 3 */
+    .topBar_section1 a{
+        font-size: 14px;
+    }
+
+    /* SECTION 4 */
+    .topBar_section4{
+        display: flex;
+    }
+    .topBar_section4Dividir{
+        display: flex;
+        padding-bottom: 10px;
+        border-top: 1px solid rgb(234, 233, 233);
+    }
 }
