@@ -1,72 +1,181 @@
-
 /* SECTION 1 */
-.topBar_section1{
+.topBar_section1 {
     width: 100%;
     background-color: black;
     display: flex;
 }
 
-.topBar_section1 a{
+.topBar_section1 a {
     font-size: 11px;
     color: white;
 }
 
 /* SECTION 2 DIVIDIR */
-.topBar_section2Dividir{
+.topBar_section2Dividir {
     padding: 10px 0;
     border-bottom: 1px solid rgb(234, 233, 233);
 }
 
+.topBar_section2Dividir_container {
+    display: none;
+}
+
+.topBar_section2Dividir_nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: flex-end;
+}
+
+.topBar_section2Dividir_nav a {
+    color: black;
+    font-size: 11px;
+}
+
 /* SECTION 3 */
-.topBar_section3{
+.topBar_section3 {
     padding: 15px;
     width: 100%;
 }
-.topBar_section3_img{
+
+.topBar_section3_img {
     width: 100px;
     height: 80px;
 }
-.topBar_section3_modalCart{
-    top: 17%;
-}
-.topBar_section3_formSearch{
+
+.topBar_section3_textImg {
     display: none;
 }
-.topBar_section3_formSearch_input{
+
+.topBar_section3_containerSearchDesktop {
+    display: none !important;
+}
+
+.topBar_section3_formSearchDesktop {
+    position: relative;
+}
+
+.topBar_section3_formSearchDesktop input {
+    background-color: #E6E3DF;
+    border: 0px none rgb(193, 192, 192);
+    width: 220px;
+    height: 30px;
+    box-shadow: none !important;
+}
+
+.topBar_section3_formSearchDesktop input::placeholder {
+    font-size: 11px;
+    padding-left: 10px;
+}
+
+.topBar_section3_formSearchDesktop i {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    color: rgb(148, 147, 147);
+}
+
+.topBar_section3_modalCart {
+    top: 17%;
+}
+
+.topBar_section3_formSearch {
+    display: none;
+}
+
+.topBar_section3_formSearch_input {
     width: 100%;
     box-shadow: 1px blue;
 }
-.topBar_section3_formSearch_input::placeholder{
-   padding-left: 4px;
-   font-size: 14px;
+
+.topBar_section3_formSearch_input::placeholder {
+    padding-left: 4px;
+    font-size: 14px;
 }
 
 /* SECTION 4 */
-.topBar_section4, .topBar_section4Dividir{
+.topBar_section4,
+.topBar_section4Dividir {
     display: none;
+}
+
+/* SECTION 5 */
+.topBar_section5 {
+    display: none;
+}
+.topBar_section5_nav{
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.topBar_section5_nav a{
+    font-size: 14px;
+    color: black;
+}
+.topBar_section5_nav span{
+    font-size: 14px;
 }
 
 
 @media (min-width: 768px) {
-    .topBar_section1 nav{
+    .topBar_section1 nav {
         width: 100%;
         justify-content: space-between;
     }
 }
 
 @media (min-width: 1024px) {
-    /* SECTION 3 */
-    .topBar_section1 a{
+
+    /* SECTION 1 */
+    .topBar_section1 nav {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .topBar_section1 a {
         font-size: 14px;
     }
 
-    /* SECTION 4 */
-    .topBar_section4{
-        display: flex;
+    .topBar_section1 a:hover,
+    .topBar_section2Dividir a:hover {
+        text-decoration: underline;
     }
-    .topBar_section4Dividir{
+
+    /* SECTION 2 */
+    .topBar_section2Dividir_container {
+        display: block;
+    }
+
+    /* SECTION 3 */
+    .topBar_section3 nav {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .topBar_section3_textImg {
+        display: block;
+        position: absolute;
+        font-size: 12px;
+    }
+
+    .topBar_section3_containerSearchDesktop {
+        display: block !important;
+        margin: auto 0;
+    }
+
+    .topBar_section3_navNoneDeks {
+        display: none !important;
+    }
+
+
+    /* SECTION 4 */
+    .topBar_section4Dividir {
         display: flex;
         padding-bottom: 10px;
         border-top: 1px solid rgb(234, 233, 233);
+    }
+
+    /* SECTION 5 */
+    .topBar_section5 {
+        display: block;
     }
 }

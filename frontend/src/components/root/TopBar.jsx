@@ -24,45 +24,74 @@ export const TopBar = () => {
         </nav>
       </section>
 
-      <div className='topBar_section2Dividir'></div>
+      <section className='topBar_section2Dividir'>
+        <div className='topBar_section2Dividir_container'>
+          <nav className='nav topBar_section2Dividir_nav'>
+            <a className="nav-link active" aria-current="page" href="/">COMPRA MÍNIMA $8.000</a>
+            <a className="nav-link" href="/">CONSULTAS</a>
+            <a className="nav-link" href="/">INICIAR SESIÓN</a>
+            <a className="nav-link topBar_section1_rightA" href="/">CREAR UNA CUENTA</a>
+          </nav>
+        </div>
+      </section>
 
       <section className='topBar_section3'>
         <nav className="nav d-flex row">
           <div className="sidebar-brand-icon p-2 flex-grow-1">
             <img className="w-1 topBar_section3_img" src="/images/logoJoyasDeAcero.jpg" alt="Buon Aseo" />
+            <span className='topBar_section3_textImg'>Joyas de Acero</span>
           </div>
-          <div id="sidebarToggleTop" className='d-flex align-items-center p-1'>
+          <div className='d-flex align-items-center p-1 topBar_section3_containerSearchDesktop'>
+            <form action="" id='topBar_section3_searchDesktop' className='topBar_section3_formSearchDesktop'>
+              <input type="text" placeholder='BUSCAR...' className='shadow p-1 bg-body rounded' />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+          </div>
+          <div id="sidebarToggleTop" className='d-flex align-items-center p-1 topBar_section3_navNoneDeks'>
             <i class="fa-solid fa-magnifying-glass" onClick={buttonSearch}></i>
           </div>
-          <div className="d-flex align-items-center p-2" >
+          <div className="d-flex align-items-center p-2 topBar_section3_navNoneDeks" >
             <i className="fa fa-bars" onClick={buttonSideBar}></i>
           </div>
-          <div className='d-flex align-items-center p-2'>
+          <div className='d-flex align-items-center p-2 topBar_section3_navNoneDeks'>
             <i class="fa-solid fa-bag-shopping mr-2" onClick={() => setSmShow(true)} ></i>
             <span onClick={() => setSmShow(true)}>0 ARTÍCULOS</span>
           </div>
           <Modal
-              size="sm"
-              show={smShow}
-              onHide={() => setSmShow(false)}
-              aria-labelledby="example-modal-sizes-title-sm"
-              className='topBar_section3_modalCart'
-            >
-              <Modal.Header closeButton>
-                <i class="fa-solid fa-bag-shopping mr-2" ></i>
-              </Modal.Header>
-              <Modal.Body>
-                No hay articulos en tu carrito
-              </Modal.Body>
-            </Modal>
+            size="sm"
+            show={smShow}
+            onHide={() => setSmShow(false)}
+            aria-labelledby="example-modal-sizes-title-sm"
+            className='topBar_section3_modalCart'
+          >
+            <Modal.Header closeButton>
+              <i class="fa-solid fa-bag-shopping mr-2" ></i>
+            </Modal.Header>
+            <Modal.Body>
+              No hay articulos en tu carrito
+            </Modal.Body>
+          </Modal>
         </nav>
         <form action="" id='topBar_section3_search' className='topBar_section3_formSearch'>
           <input type="text" placeholder='Buscar...' className='shadow p-1 bg-body rounded topBar_section3_formSearch_input' />
         </form>
       </section>
+
       <div className='topBar_section4Dividir'></div>
-      <section className='topBar_section4'>
-        
+
+      <section className='topBar_section5'>
+        <nav className='nav topBar_section5_nav'>
+          <a className="nav-link active" aria-current="page" href="/">ACERO v</a>
+          <a className="nav-link" href="/">PLATA v</a>
+          <a className="nav-link" href="/">ENCHAPADO EN ORO v</a>
+          <a className="nav-link" href="/">RELOJES v</a>
+          <a className="nav-link" href="/">ACCESORIOS v</a>
+          <a className="nav-link" href="/">NOVEDADES v</a>
+          <div className='d-flex align-items-center p-2'>
+            <i class="fa-solid fa-bag-shopping mr-2" onClick={() => setSmShow(true)} ></i>
+            <span onClick={() => setSmShow(true)}>0 ARTÍCULOS</span>
+          </div>
+        </nav>
       </section>
     </nav>
   )
