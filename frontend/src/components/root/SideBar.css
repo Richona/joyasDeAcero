@@ -6,12 +6,76 @@
 .sideBar_ul_none{
     display: none;
 }
-.sideBar_salida{
+
+/* SECTION 1 */
+.sideBar_section1_salida{
     color: white;
     text-align: right;
     padding-top: 20px;
     padding-right: 20px;
 }
-.sideBar_imgLogo{
-    padding: 0 20px;
+.sideBar_section1_salida i{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+/* SECTION 2 */
+.sideBar_section2{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.sideBar_section2 button{
+    background-color: black !important;
+    color: white !important;
+}
+.sideBar_section2 button:active, .sideBar_section2 button:hover, .sideBar_section2 button:focus,.sideBar_section2 button::selection{
+    color: white !important;
+    background-color: black !important;
+}
+
+/* menu */
+.sideBar_section2_menu_accordion_item{
+    padding-bottom: 10px;
+}
+.sideBar_section2_menu_accordion_item_header button{
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    text-align: left;
+
+    padding-left: 20px;
+    padding-right: 10px;
+
+    width: 100% !important;
+    border: 0px solid black !important;
+
+    display: flex;
+    justify-content: space-between;
+}
+.sideBar_section2_menu_accordion_item_header button:focus{
+    outline: none;
+}
+.sideBar_section2_menu_accordion_item_body{
+    font-size: 12px;
+    color: white;
+    padding: 10px 10px 0px 20px;
+}
+
+/* min-width: 768px */
+@media (min-width: 768px) {
+    .sideBar_ul{
+        width: 380px !important
+    }
+    .sideBar_section2 button{
+        width: 130px !important;
+        text-align: center !important;
+    }
+}
+
+/* min-width: 1024px */
+@media (min-width: 1024px){
+    .sideBar_ul{
+        display: none;
+    }
 }
