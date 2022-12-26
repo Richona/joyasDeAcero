@@ -114,7 +114,28 @@
 .topBar_section5_nav span{
     font-size: 14px;
 }
-
+.topBar_section5_button, .topBar_section5_Toggle, .topBar_section5_button:hover, .topBar_section5_Toggle:hover,.topBar_section5_button:active, .topBar_section5_Toggle:active, .topBar_section5_button:focus, .topBar_section5_Toggle:focus{
+    background-color: transparent !important;
+    color: black !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.topBar_section5_Menu{
+    background-color: #f8f9fc;
+}
+.topBar_section5_subMenuLi{
+    width: 300px !important;
+}
+.topBar_section5_subMenuDropdown{
+    display: flex;
+    justify-content: space-between;
+}
+.topBar_section5_subMenubutton{
+    text-align: left;
+}
+.topBar_section5_subMenuToggle{
+    text-align: right;
+}
 
 @media (min-width: 768px) {
     .topBar_section1 nav {
