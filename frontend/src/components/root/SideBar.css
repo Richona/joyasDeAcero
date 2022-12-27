@@ -2,6 +2,7 @@
     position: fixed !important;
     background-color: black;
     width: calc(100% - 54px);
+    z-index: 99;
 }
 .sideBar_ul_none{
     display: none;
