@@ -1,19 +1,29 @@
 .home_container{
-    padding: 0 15px;
+    padding: 0 15px 36px;
 }
 .home_title{
     text-align: center !important;
     font-size: 15px !important;
     font-weight: 400 !important;
 }
+
+/* SECTION 1 */
 .home_containerSection1{
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* SECTION 2 */
+.home_containerSection2{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
 @media (min-width: 768px) {
     .home_container{
-        padding: 0 35px;
+        padding: 0 35px 36px;
     }
 }
 
