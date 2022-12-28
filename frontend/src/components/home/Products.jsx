@@ -19,6 +19,9 @@ const Products = () => {
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
+                            <small className="text-muted"><b>Precio:</b> $12323132</small>
+                        </Card.Footer>
+                        <Card.Footer>
                             <Button variant="primary">Go somewhere</Button>
                         </Card.Footer>
                     </Card>
@@ -31,6 +34,9 @@ const Products = () => {
                                 additional content.{' '}
                             </Card.Text>
                         </Card.Body>
+                        <Card.Footer>
+                            <small className="text-muted"><b>Precio:</b> $12323132</small>
+                        </Card.Footer>
                         <Card.Footer>
                             <Button variant="primary">Go somewhere</Button>
                         </Card.Footer>
@@ -45,6 +51,9 @@ const Products = () => {
                                 first to show that equal height action.
                             </Card.Text>
                         </Card.Body>
+                        <Card.Footer>
+                        <small className="text-muted"><b>Precio:</b> $12323132</small>
+                        </Card.Footer>
                         <Card.Footer>
                             <Button variant="primary">Go somewhere</Button>
                         </Card.Footer>
