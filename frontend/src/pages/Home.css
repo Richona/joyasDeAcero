@@ -1,0 +1,24 @@
+.home_container{
+    padding: 0 15px;
+}
+.home_title{
+    text-align: center !important;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+}
+.home_containerSection1{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .home_container{
+        padding: 0 35px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .home_containerTitle{
+        display: none;
+    }
+}

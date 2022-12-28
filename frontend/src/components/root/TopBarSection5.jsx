@@ -9,7 +9,7 @@ export const TopBarSection5 = (props) => {
 
     return (
         <Dropdown as={ButtonGroup} align={{ lg: 'start' }}>
-            <Button variant="secondary" className="topBar_section5_button">{props.name}</Button>
+            <Button variant="secondary" className="topBar_section5_button topBar_section5_buttonNoPadding">{props.name}</Button>
             <Dropdown.Toggle className="topBar_section5_Toggle" split variant="secondary" id="dropdown-custom-2" />
             <Dropdown.Menu className="topBar_section5_Menu">
                 {subNameToArray.map((sub, index) => (

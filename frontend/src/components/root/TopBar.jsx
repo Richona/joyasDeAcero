@@ -61,8 +61,8 @@ export const TopBar = () => {
       </section>
 
       <section className='topBar_section3'>
-        <nav className="nav d-flex row">
-          <div className="sidebar-brand-icon p-2 flex-grow-1">
+        <nav className="nav d-flex topBar_section3_nav">
+          <div className="sidebar-brand-icon flex-grow-1">
             <img className="w-1 topBar_section3_img" src="/images/logoJoyasDeAcero.jpg" alt="Buon Aseo" />
             <span className='topBar_section3_textImg'>Joyas de Acero</span>
           </div>
@@ -72,15 +72,15 @@ export const TopBar = () => {
               <i className="fa-solid fa-magnifying-glass"></i>
             </form>
           </div>
-          <div id="sidebarToggleTop" className='d-flex align-items-center p-1 topBar_section3_navNoneDeks'>
-            <i className="fa-solid fa-magnifying-glass" onClick={buttonSearch}></i>
+          <div id="sidebarToggleTop" className='d-flex align-items-center topBar_section3_navNoneDeks'>
+            <i className="fa-solid fa-magnifying-glass topBar_section3_i" onClick={buttonSearch}></i>
           </div>
-          <div className="d-flex align-items-center p-2 topBar_section3_navNoneDeks" >
-            <i className="fa fa-bars" onClick={buttonSideBar}></i>
+          <div className="d-flex align-items-center topBar_section3_navNoneDeks" >
+            <i className="fa fa-bars topBar_section3_i" onClick={buttonSideBar}></i>
           </div>
-          <div className='d-flex align-items-center p-2 topBar_section3_navNoneDeks'>
-            <i className="fa-solid fa-bag-shopping mr-2" onClick={() => setSmShow(true)} ></i>
-            <span onClick={() => setSmShow(true)}>0 ARTÍCULOS</span>
+          <div className='d-flex align-items-center topBar_section3_navNoneDeks'>
+            <i className="fa-solid fa-bag-shopping mr-2 topBar_section3_i" onClick={() => setSmShow(true)} ></i>
+            <span onClick={() => setSmShow(true)} className="topBar_section3_spanText">0 ARTÍCULOS</span>
           </div>
           <Modal
             size="sm"
@@ -110,7 +110,7 @@ export const TopBar = () => {
           {arrayToSection5.map((item, index) => (
             <TopBarSection5 name={`${item.name}`} subName={`${item.subName}`} subSubName={`${item.subSubName}`} key={index}/>
           ))}
-          <div className='d-flex align-items-center p-2'>
+          <div className='d-flex align-items-center p-2 topBar_section5_buttonNoPadding'>
             <i className="fa-solid fa-bag-shopping mr-2" onClick={() => setSmShow(true)} ></i>
             <span onClick={() => setSmShow(true)}>0 ARTÍCULOS</span>
           </div>

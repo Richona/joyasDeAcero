@@ -1,15 +1,16 @@
 import React from "react";
+import "./Home.css"
 import Carousel from "../components/home/Carousel";
 
 export const Home = () => {
   return (
-    <div className="container-fluid">
-      <div className="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 className="h3 mb-0 text-gray-800">Joyas de acero</h1>
+    <div className="home_container">
+      <div className="home_containerTitle">
+        <h1 className="home_title">Joyas de Acero y Plata por Mayor</h1>
       </div>
-      <div>
+      <section className="home_containerSection1">
         <Carousel />
-      </div>
+      </section>
     </div>
   );
 };

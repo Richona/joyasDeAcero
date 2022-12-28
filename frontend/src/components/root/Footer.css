@@ -100,8 +100,8 @@
 @media (min-width: 768px) {
     /* MIDDLE */
     .footer_middle_container{
-        padding-right: 50px;
-        padding-left: 50px;
+        padding-right: 35px;
+        padding-left: 35px;
         width: 100%;
     }
     .footer_middle_article2{
