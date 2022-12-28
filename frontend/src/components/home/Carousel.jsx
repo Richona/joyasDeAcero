@@ -1,10 +1,11 @@
 import React from 'react'
+import "./Carousel.css"
 import Carousel from 'react-bootstrap/Carousel';
 
 export default function Carousels() {
   return (
     <div className='carouselHome_container'>
-      <Carousel controls={false} fade={true} indicators={false}>
+      <Carousel fade={true} indicators={false} nextLabel={""} prevLabel={""}>
         <Carousel.Item interval={3000}>
           <img
             className="d-block w-100"

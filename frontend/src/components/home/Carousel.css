@@ -1,3 +1,13 @@
-.carouselHome_container{
-    
+
+@media (min-width: 768px) {
+    .carouselHome_container span{
+        width: 30px;
+        height: 30px;
+    }
+}
+@media (min-width: 1024px) {
+    .carouselHome_container span{
+        width: 40px;
+        height: 40px;
+    }
 }

@@ -7,6 +7,9 @@
 .footer_middle{
     background-color: black;
     padding: 24px 0;
+
+    padding-right: 15px;
+    padding-left: 15px;
 }
 .footer_middle ul{
     list-style: none;
@@ -14,9 +17,6 @@
     padding: 0;
 }
 .footer_middle_container{
-    padding-right: 15px;
-    padding-left: 15px;
-
     max-width: 1200px;
     margin: 0 auto;
 
@@ -99,9 +99,11 @@
 
 @media (min-width: 768px) {
     /* MIDDLE */
-    .footer_middle_container{
+    .footer_middle{
         padding-right: 35px;
         padding-left: 35px;
+    }
+    .footer_middle_container{   
         width: 100%;
     }
     .footer_middle_article2{
