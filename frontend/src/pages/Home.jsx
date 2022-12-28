@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css"
 import Carousel from "../components/home/Carousel";
+import Products from "../components/home/Products";
 import Banner from "../components/home/Banner";
 
 export const Home = () => {
@@ -13,6 +14,7 @@ export const Home = () => {
         <Carousel />
       </section>
       <section className="home_containerSection2">
+        <Products />
         <Banner />
       </section>
     </div>
