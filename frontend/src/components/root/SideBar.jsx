@@ -1,7 +1,10 @@
 import React from 'react'
 import "./SideBar.css"
+
 import SideBarSection2Menu from './SideBarSection2Menu';
 import SideBarSection2Cuenta from './SideBarSection2Cuenta';
+
+import Accordion from 'react-bootstrap/Accordion';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 
@@ -11,29 +14,46 @@ export const SideBar = () => {
     }
     const arrayToSection2Menu = [
         {
-          name: "ACERO",
-          subName: ["ACERO DORADO Y ROSÉ", "ACERO BLANCO", "ACERO QUIRÚRJICO"],
-          subSubName: ["ANILLOS", "AROS", "CADENAS", "DIJES", "PULSERAS"]
+            name: "ACERO",
+            subName: ["ACERO DORADO Y ROSÉ", "ACERO BLANCO", "ACERO QUIRÚRJICO"],
+            subSubName: ["ANILLOS", "AROS", "CADENAS", "DIJES", "PULSERAS"]
         },
         {
-          name: "PLATA",
-          subName: ["PLATA", "PLATA Y ORO", "PLATA DORADA Y ROSÉ"],
-          subSubName: ["ANILLOS", "AROS", "CADENAS", "DIJES", "PULSERAS"]
+            name: "PLATA",
+            subName: ["PLATA", "PLATA Y ORO", "PLATA DORADA Y ROSÉ"],
+            subSubName: ["ANILLOS", "AROS", "CADENAS", "DIJES", "PULSERAS"]
         },
         {
-          name: "ENCHAPADO EN ORO",
-          subName: ["ANILLOS", "AROS", "CADENAS", "DIJES", "PULSERAS"],
-          subSubName: []
+            name: "ENCHAPADO EN ORO",
+            subName: ["ANILLOS", "AROS", "CADENAS", "DIJES", "PULSERAS"],
+            subSubName: []
         },
         {
-          name: "NOVEDADES",
-          subName: ["JOYAS DE ACERO", "JOYAS DE PLATA", "JOYAS ENCHAPADAS EN ORO"],
-          subSubName: []
+            name: "NOVEDADES",
+            subName: ["JOYAS DE ACERO", "JOYAS DE PLATA", "JOYAS ENCHAPADAS EN ORO"],
+            subSubName: []
         },
-      ]
+    ]
 
-      const arrayToSection2Cuenta = ["Compra mínima $8.000", "Consultas", "Iniciar sesión", "Crear una cuenta"]
-
+    const arrayToSection2Cuenta = [
+        {
+            title: "Compra mínima $8.000",
+            link: ""
+        },
+        {
+            title: "Consultas",
+            link: "/contacto"
+        },  
+        {
+            title: "Iniciar sesión",
+            link: "/usuarios/ingresar"
+        },
+        {
+            title: "Crear una cuenta",
+            link: "/usuarios/registrarse"
+        },
+    ]
+    
     return (
         <ul className="navbar-nav bg-gradient sidebar sidebar-dark accordion sideBar_ul sideBar_ul_none" id="accordionSidebar" >
             <li className='sideBar_section1_salida' onClick={buttonSideBar}>
@@ -45,15 +65,16 @@ export const SideBar = () => {
             <Tabs defaultActiveKey="menu" id="uncontrolled-tab-example" className="mb-3 sideBar_section2">
                 <Tab eventKey="menu" title="Menú" className='sideBar_section2_Tab'>
                     {/* SECTION 2 MENU */}
-                    {arrayToSection2Menu.map((item, index) => (
-                        <SideBarSection2Menu title={item.name} eventKey={index} subName={item.subName} subSubName={item.subSubName} key={index}/>
-                    ))}
-
+                    <Accordion alwaysOpen={false} className='sideBar_section2_menu_accordion'>
+                        {arrayToSection2Menu.map((item, index) => (
+                            <SideBarSection2Menu title={item.name} eventKey={index} subName={item.subName} subSubName={item.subSubName} key={index} />
+                        ))}
+                    </Accordion>
                 </Tab>
                 <Tab eventKey="cuenta" title="Cuenta" className='sideBar_section2_Tab'>
                     {/* SECTION 2 CUENTA */}
                     {arrayToSection2Cuenta.map((item, index) => (
-                        <SideBarSection2Cuenta title={item} eventKey={index} key={index}/>
+                        <SideBarSection2Cuenta title={item.title} link={item.link} eventKey={index} key={index} />
                     ))}
                 </Tab>
             </Tabs>

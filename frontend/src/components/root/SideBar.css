@@ -34,11 +34,15 @@
     color: white !important;
     background-color: black !important;
 }
-
-/* menu */
-.sideBar_section2_menu_accordion_item{
-    padding-bottom: 10px;
+.sidebar_section2_divider{
+    border-top: 1px solid rgba(255,255,255,.15);
+    margin: 14px 16px !important;
 }
+.sidebar_section2_divider_0{
+    margin-top: 0px !important;
+}
+/* menu */
+
 .sideBar_section2_menu_accordion_item_header button{
     font-size: 12px;
     background-color: black;
@@ -53,6 +57,9 @@
 
     display: flex;
     justify-content: space-between;
+}
+.sideBar_section2_menu_accordion_item_header button a{
+    color: white;
 }
 .sideBar_section2_menu_accordion_item_header button:focus{
     outline: none;
