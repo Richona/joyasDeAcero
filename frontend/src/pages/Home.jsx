@@ -3,6 +3,7 @@ import "./Home.css"
 import Carousel from "../components/home/Carousel";
 import Products from "../components/home/Products";
 import Banner from "../components/home/Banner";
+import Insta from "../components/home/Insta";
 
 export const Home = () => {
   return (
@@ -16,6 +17,7 @@ export const Home = () => {
       <section className="home_containerSection2">
         <Products />
         <Banner />
+        <Insta />
       </section>
     </div>
   );

@@ -4,3 +4,8 @@
 .productsHome_container_div{
     padding-bottom: 15px !important;
 }
+@media (min-width: 768px) {
+    .productsHome_container_div{
+        padding-bottom: 30px !important;
+    }
+}
