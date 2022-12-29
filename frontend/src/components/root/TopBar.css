@@ -14,6 +14,11 @@
     color: white;
     padding: 5px 0 !important;
 }
+.topBar_section1 span {
+    font-size: 11px;
+    color: white;
+    padding: 5px 0 !important;
+}
 
 /* SECTION 2 DIVIDIR */
 .topBar_section2Dividir {
@@ -33,6 +38,11 @@
 }
 
 .topBar_section2Dividir_nav a {
+    color: black;
+    font-size: 11px;
+    padding: 8px 0 !important;
+}
+.topBar_section2Dividir_nav span {
     color: black;
     font-size: 11px;
     padding: 8px 0 !important;
@@ -118,7 +128,7 @@
 /* SECTION 5 */
 .topBar_section5 {
     display: none;
-    padding: 0 35px;
+    padding: 0 35px 5px;
 }
 .topBar_section5_nav{
     justify-content: space-between;
@@ -182,8 +192,10 @@
         max-width: 1200px;
         margin: 0 auto;
     }
-
     .topBar_section1 a {
+        font-size: 14px;
+    }
+    .topBar_section1 span {
         font-size: 14px;
     }
 

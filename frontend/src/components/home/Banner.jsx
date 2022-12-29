@@ -6,7 +6,7 @@ export default function Banner() {
     <article className='bannerHome_container'> 
       <div className='bannerHome_container_div'>
         <figure className='bannerHome_container_div_figure'> 
-          <i class="fa-solid fa-dollar-sign"></i>
+          <i className="fa-solid fa-dollar-sign"></i>
         </figure>
         <nav className='bannerHome_container_div_nav'>
           <a href="/">

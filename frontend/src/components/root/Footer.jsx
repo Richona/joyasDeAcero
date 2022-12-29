@@ -60,7 +60,7 @@ export const Footer = () => {
       <section className='footer_botton'>
         <a href="#wrapper">
           <div className='footer_botton_containerArrowUp'>
-            <i class="fa-solid fa-caret-up"></i>
+            <i className="fa-solid fa-caret-up"></i>
           </div>
         </a>
       </section>

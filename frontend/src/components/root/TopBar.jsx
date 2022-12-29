@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import Modal from 'react-bootstrap/Modal';
+import { Link } from 'react-router-dom';
+
 import "./TopBar.css"
 import { TopBarSection5 } from './TopBarSection5';
-import Modal from 'react-bootstrap/Modal';
-
 
 export const TopBar = () => {
   function buttonSideBar() {
@@ -42,20 +43,20 @@ export const TopBar = () => {
     <nav className="topBar_nav">
       <section className='topBar_section1'>
         <nav className="nav" >
-          <a className="nav-link active" aria-current="page" href="/">HORARIOS DE ATENCIÓN</a>
-          <a className="nav-link" href="/">DÓNDE ENCONTRARNOS</a>
-          <a className="nav-link" href="/">CÓMO COMPRAR</a>
-          <a className="nav-link topBar_section1_rightA" href="/">LLAMANOS: numero1234</a>
+          <Link className="nav-link active" aria-current="page" to="/horarios-de-atencion">HORARIOS DE ATENCIÓN</Link>
+          <Link className="nav-link" to="/locales">DÓNDE ENCONTRARNOS</Link>
+          <Link className="nav-link" to="/como-comprar">CÓMO COMPRAR</Link>
+          <span className="nav-link topBar_section1_rightA" href="/">LLAMANOS: numero1234</span>
         </nav>
       </section>
 
       <section className='topBar_section2Dividir'>
         <div className='topBar_section2Dividir_container'>
           <nav className='nav topBar_section2Dividir_nav'>
-            <a className="nav-link active" aria-current="page" href="/">COMPRA MÍNIMA $8.000</a>
-            <a className="nav-link" href="/">CONSULTAS</a>
-            <a className="nav-link" href="/">INICIAR SESIÓN</a>
-            <a className="nav-link topBar_section1_rightA" href="/">CREAR UNA CUENTA</a>
+            <span className="nav-link active" aria-current="page" href="/">COMPRA MÍNIMA $8.000</span>
+            <Link className="nav-link" to="/contacto">CONSULTAS</Link>
+            <Link className="nav-link" to="/usuarios/ingresar">INICIAR SESIÓN</Link>
+            <Link className="nav-link topBar_section1_rightA" to="/usuarios/registrarse">CREAR UNA CUENTA</Link>
           </nav>
         </div>
       </section>
@@ -63,7 +64,7 @@ export const TopBar = () => {
       <section className='topBar_section3'>
         <nav className="nav d-flex topBar_section3_nav">
           <div className="sidebar-brand-icon flex-grow-1">
-            <img className="w-1 topBar_section3_img" src="/images/logoJoyasDeAcero.jpg" alt="Buon Aseo" />
+            <Link to="/"><img className="w-1 topBar_section3_img" src="/images/logoJoyasDeAcero.jpg" alt="Buon Aseo" /></Link>
             <span className='topBar_section3_textImg'>Joyas de Acero</span>
           </div>
           <div className='d-flex align-items-center p-1 topBar_section3_containerSearchDesktop'>

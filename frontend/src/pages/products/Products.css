@@ -1,0 +1,17 @@
+.Products_container{
+    padding: 0 15px 36px;
+}
+.Products_container_section1{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .Products_container{
+        padding: 0 35px 36px;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+}

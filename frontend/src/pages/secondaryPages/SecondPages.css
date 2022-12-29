@@ -1,0 +1,17 @@
+.SecondPage_container{
+    padding: 0 15px 36px;
+}
+.SecondPage_container_section1{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .SecondPage_container{
+        padding: 0 35px 36px;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+}
