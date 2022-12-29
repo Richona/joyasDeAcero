@@ -25,7 +25,7 @@ const router = createBrowserRouter(
           <Route path='/' exact={true} element={<Home/>}/>
 
           {/* PRODUCTS */}
-          <Route path='/productos/catalogo' element={<Catalogue/>}/>
+          <Route path='/productos/catalogo/:categoria' exact={true} element={<Catalogue/>}/>
 
           {/* USERS */}
           <Route path='/usuarios/ingresar' exact={true} element={<Login/>}/>
