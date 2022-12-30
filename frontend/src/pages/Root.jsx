@@ -8,8 +8,8 @@ export const Root = () => {
     return (
         <div id="wrapper">
             <SideBar />
-            <div id="content-wrapper" className="d-flex flex-column">
-                <div id="content">
+            <div id="content-wrapper" className="d-flex flex-column" style={{display: "flex", flexDirection: "column", minHeight: "100vh"}}>
+                <div id="content" style={{flex: "1"}}>
 
                     <TopBar />
 

@@ -1,88 +1,100 @@
-.footer_top{
+.footer_top {
     padding: 15px 0 0;
     background-color: black;
 }
 
 /* MIDDLE */
-.footer_middle{
+.footer_middle {
     background-color: black;
     padding: 24px 0;
 
     padding-right: 15px;
     padding-left: 15px;
 }
-.footer_middle ul{
+
+.footer_middle ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.footer_middle_container{
+
+.footer_middle_container {
     max-width: 1200px;
     margin: 0 auto;
 
     display: flex;
     flex-flow: row wrap;
 }
-.footer_middle_container strong{
+
+.footer_middle_container strong {
     color: #fff;
     font-size: 14px;
     font-weight: 400;
     font-family: 'Oswald';
     letter-spacing: 0.075em;
-    
+
 }
-.footer_middle_container span, .footer_middle_container a{
+
+.footer_middle_container span,
+.footer_middle_container a {
     color: #90969A;
     font-size: 13px;
 }
 
-.footer_middle_article1{
+.footer_middle_article1 {
     text-align: left;
     line-height: 1.5;
     padding-bottom: 10px;
     width: 100%;
 }
-.footer_middle_article1_containerTitle{
+
+.footer_middle_article1_containerTitle {
     margin-bottom: 15px;
 }
-.footer_middle_article1_b{
+
+.footer_middle_article1_b {
     color: #fff;
-    text-transform:uppercase;
+    text-transform: uppercase;
     font-weight: 400;
     font-size: 13px;
     margin-bottom: 7px;
 }
-.footer_middle_article2_ul{
+
+.footer_middle_article2_ul {
     padding-bottom: 10px !important;
 }
-.footer_middle_article2_containerIMG img{
+
+.footer_middle_article2_containerIMG img {
     max-height: 100%;
     max-width: 100%;
 }
-.footer_middle_article2_containerCierre{
+
+.footer_middle_article2_containerCierre {
     height: 100px;
 }
 
-.footer_middle_article2_containerCopy{
+.footer_middle_article2_containerCopy {
     border-top: 1px solid #2c2c2c;
     text-align: left;
     padding: 27px 0;
     overflow: hidden;
     margin-top: 32px;
 }
-.footer_middle_article2_containerCopy_div{
+
+.footer_middle_article2_containerCopy_div {
     display: flex;
     flex-flow: column wrap;
 }
 
 /* BUTTON */
-.footer_botton{
+.footer_botton {
     padding-top: 5px;
     background-color: transparent;
     display: flex;
     justify-content: flex-end;
 }
-.footer_botton_containerArrowUp{
+
+.footer_botton_containerArrowUp {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,72 +105,88 @@
     border-top-left-radius: 10px;
     margin-right: 20px;
 }
-.footer_botton_containerArrowUp i{
+
+.footer_botton_containerArrowUp i {
     color: white;
 }
 
 @media (min-width: 768px) {
+
     /* MIDDLE */
-    .footer_middle{
+    .footer_middle {
         padding-right: 35px;
         padding-left: 35px;
     }
-    .footer_middle_container{   
+
+    .footer_middle_container {
         width: 100%;
     }
-    .footer_middle_article2{
+
+    .footer_middle_article2 {
         width: 100%;
     }
-    .footer_middle_article1_containerUls{
+
+    .footer_middle_article1_containerUls {
         display: flex;
         flex-flow: wrap row;
         justify-content: space-between;
         width: 100%;
     }
-    .footer_middle_article2_ul{
+
+    .footer_middle_article2_ul {
         width: 50%;
     }
-    .footer_middle_article2_containerCierre{
+
+    .footer_middle_article2_containerCierre {
         height: 50px;
     }
-    .footer_middle_article2_containerCopy{
+
+    .footer_middle_article2_containerCopy {
         width: 100%;
     }
-    .footer_middle_article2_containerCopy_div{
+
+    .footer_middle_article2_containerCopy_div {
         flex-flow: row wrap;
         justify-content: space-between;
         width: 100%;
-        
+
     }
-    .footer_middle_article2_containerCopy_div span{
+
+    .footer_middle_article2_containerCopy_div span {
         width: 50%;
     }
 }
 
-@media (min-width: 1024px){
-    .footer_middle_container{
+@media (min-width: 1024px) {
+    .footer_middle_container {
         justify-content: space-between;
         gap: 16px;
     }
-    .footer_middle_article1{
+
+    .footer_middle_article1 {
         width: 20%;
     }
-    .footer_middle_article2{
+
+    .footer_middle_article2 {
         width: 78%;
     }
-    .footer_middle_article2_nav{
+
+    .footer_middle_article2_nav {
         display: flex;
         flex-flow: wrap row;
         justify-content: space-between;
     }
-    .footer_middle_article2_ul{
+
+    .footer_middle_article2_ul {
         width: 44%;
     }
-    .footer_middle_article2_ul li{
+
+    .footer_middle_article2_ul li {
         line-height: 1;
         padding-bottom: 6px;
     }
-    .footer_middle_article2_containerIMG{
+
+    .footer_middle_article2_containerIMG {
         width: 58%;
     }
 }
