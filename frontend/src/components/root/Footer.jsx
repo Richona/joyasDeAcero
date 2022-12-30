@@ -1,6 +1,8 @@
 import React from 'react'
 import "./Footer.css"
 
+import { Link } from 'react-router-dom';
+
 export const Footer = () => {
   return (
     <footer className="footer_container">
@@ -30,16 +32,16 @@ export const Footer = () => {
                 </div>
                 <div className='footer_middle_article1_containerUls'>
                   <ul className='footer_middle_article2_ul'>
-                    <li><a href="/">Sobre Joyas de Acero</a></li>
-                    <li><a href="/">Preguntas frecuentes</a></li>
-                    <li><a href="/">Contacto</a></li>
-                    <li><a href="/">Ser nuestro proveedor</a></li>
+                    <li><Link to="/sobre-joyas-de-acero">Sobre Joyas de Acero</Link></li>
+                    <li><Link to="/preguntas-frecuentes">Preguntas frecuentes</Link></li>
+                    <li><Link to="/contacto">Contacto</Link></li>
+                    <li><Link to="/proveedores">Ser nuestro proveedor</Link></li>
                   </ul>
                   <ul className='footer_middle_article2_ul'>
-                    <li><a href="/">Políticas de cambio</a></li>
-                    <li><a href="/">Cuidado de las Joyas</a></li>
-                    <li><a href="/">Guía de Talles</a></li>
-                    <li><a href="/">Ser parte de nuestro Staff</a></li>
+                    <li><Link to="/politicas-de-cambio">Políticas de cambio</Link></li>
+                    <li><Link to="/cuidado-de-las-joyas">Cuidado de las Joyas</Link></li>
+                    <li><Link to="/talles">Guía de Talles</Link></li>
+                    <li><Link to="/ser-parte-de-nuestro-staff">Ser parte de nuestro Staff</Link></li>
                   </ul>
                 </div>
               </div>

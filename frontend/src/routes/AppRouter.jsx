@@ -17,6 +17,13 @@ import Attentionschedule from '../pages/secondaryPages/AttentionSchedule';
 import WhereToFindUs from '../pages/secondaryPages/WhereToFindUs';
 import HowToBuy from '../pages/secondaryPages/HowToBuy';
 import Contact from '../pages/secondaryPages/Contact';
+import AboutSteelJewelry from '../pages/secondaryPages/AboutSteelJewelry';
+import FrequentQuestions from '../pages/secondaryPages/FrequentQuestions';
+import BeOurSupplier from '../pages/secondaryPages/BeOurSupplier';
+import ExchangePolicies from '../pages/secondaryPages/ExchangePolicies';
+import JewelryCare from '../pages/secondaryPages/JewelryCare';
+import SizeGuide from '../pages/secondaryPages/SizeGuide';
+import BePartOfOurStaff from '../pages/secondaryPages/BePartOfOurStaff';
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -36,6 +43,13 @@ const router = createBrowserRouter(
           <Route path='/locales' exact={true} element={<WhereToFindUs/>}/>
           <Route path='/como-comprar' exact={true} element={<HowToBuy/>}/>
           <Route path='/contacto' exact={true} element={<Contact/>}/>
+          <Route path='/sobre-joyas-de-acero' exact={true} element={<AboutSteelJewelry/>}/>
+          <Route path='/preguntas-frecuentes' exact={true} element={<FrequentQuestions/>}/>
+          <Route path='/proveedores' exact={true} element={<BeOurSupplier/>}/>
+          <Route path='/politicas-de-cambio' exact={true} element={<ExchangePolicies/>}/>
+          <Route path='/cuidado-de-las-joyas' exact={true} element={<JewelryCare/>}/>
+          <Route path='/talles' exact={true} element={<SizeGuide/>}/>
+          <Route path='/ser-parte-de-nuestro-staff' exact={true} element={<BePartOfOurStaff/>}/>
 
         </Route>
     )
