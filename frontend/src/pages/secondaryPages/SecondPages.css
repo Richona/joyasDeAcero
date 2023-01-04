@@ -1,20 +1,26 @@
-.SecondPage_container{
+.SecondPage_container {
     padding: 0 15px 36px;
 }
-.SecondPage_container_section1{
+
+.SecondPage_container_section1 {
     max-width: 1200px;
     margin: 0 auto;
 }
-.SecondPage_container_article1{
+
+.SecondPage_container_article1 {
     padding-bottom: 36px;
 }
 
+/* WhereToFindUs */
+.SecondPage_container_article1_iframeDeGugul {
+    width: 100%;
+    height: 446px;
+}
+
 @media (min-width: 768px) {
-    .SecondPage_container{
+    .SecondPage_container {
         padding: 0 35px 36px;
     }
 }
 
-@media (min-width: 1024px) {
-    
-}
+@media (min-width: 1024px) {}
