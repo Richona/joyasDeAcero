@@ -17,9 +17,21 @@
     height: 446px;
 }
 
+/* Contact */
+.SecondPage_container_article1_contact {
+    display: flex;
+    flex-flow: column wrap;
+}
+
 @media (min-width: 768px) {
     .SecondPage_container {
         padding: 0 35px 36px;
+    }
+
+    /* Contact */
+    .SecondPage_container_article1_contact {
+        flex-flow: row wrap;
+        justify-content: space-between;
     }
 }
 

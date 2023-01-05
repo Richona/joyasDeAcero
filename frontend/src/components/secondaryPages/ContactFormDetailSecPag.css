@@ -1,0 +1,61 @@
+.ContactFormSecPag {
+    width: 100%;
+}
+
+/* FORM */
+.ContactFormSecPag div label {
+    font-size: 14px;
+}
+
+.ContactFormSecPag_containerButton {
+    width: 100%;
+}
+
+.ContactFormSecPag_containerButton button {
+    width: 100%;
+    background-color: black;
+
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* DETAIL */
+.ContactDetailSecPag_container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.ContactDetailSecPag_container div {
+    position: relative;
+}
+
+.ContactDetailSecPag_container i {
+    float: left;
+    width: 43px;
+    height: 43px;
+    background-color: black;
+    color: #fff;
+    line-height: 43px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.ContactDetailSecPag_container p {
+    margin-left: 55px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 21px
+}
+
+@media (min-width: 768px) {
+    .ContactFormSecPag {
+        width: 33%;
+    }
+
+    /* FORM */
+    .ContactFormSecPag_containerButton button {
+        width: 85px;
+    }
+}
