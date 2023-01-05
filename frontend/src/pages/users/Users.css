@@ -5,10 +5,28 @@
     max-width: 1200px;
     margin: 0 auto;
 }
+.Users_container_article1{
+    padding-bottom: 36px;
+}
+.Users_container_article1_container{
+    padding: 35px 25px;
+    border: 1px solid #ececec;
+    border-top: 4px solid black;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 8%);
+
+    display: flex;
+    flex-flow: column wrap;
+    gap: 50px;
+}
 
 @media (min-width: 768px) {
     .Users_container{
         padding: 0 35px 36px;
+    }
+    .Users_container_article1_container{
+        flex-flow: row wrap;
+        justify-content: space-between;
+        gap: 30px;
     }
 }
 

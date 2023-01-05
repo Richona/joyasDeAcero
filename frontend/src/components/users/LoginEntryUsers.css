@@ -1,0 +1,52 @@
+.LoginEntryUsers_container{
+    width: 100%;
+}
+.LoginEntryUsers_container h4{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.LoginEntryUsers_container p{
+    font-size: 13px;
+}
+.LoginEntryUsers_container_a{
+    text-align: center;
+    margin-top: 9px;
+}
+.LoginEntryUsers_container_a a{
+    color: black;
+    font-size: 13px;
+}
+
+/* NEW USERS */
+.LoginEntryUsers_container button a{
+    color: white;
+}
+
+
+@media (min-width: 768px) {
+    .LoginEntryUsers_container{
+        width: 46%;
+    }
+    .LoginEntryUsers_container form{
+        width: 100%;
+        max-width: 424px;
+    }
+    .LoginEntryUsers_button{
+        width: 97px !important;
+        padding: 7px 15px;
+        margin-right: 20px;
+    }
+    .LoginEntryUsers_container_a{
+        text-align: center;
+        margin-top: 9px;
+
+        display: inline-block;
+    }
+
+    /* NEW USERS */
+    .LoginNewUsers_button{
+        width: 186px !important;
+        padding: 7px 15px;
+    }
+}
