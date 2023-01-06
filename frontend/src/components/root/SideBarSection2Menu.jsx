@@ -11,7 +11,7 @@ export default function SideBarSection2Menu(props) {
     return (
         <Accordion.Item eventKey={`${props.eventKey}`} className='sideBar_section2_menu_accordion_item'>
             <Accordion.Header className='sideBar_section2_menu_accordion_item_header'>
-                <Link to={"/productos/catalogo/" + props.title} onClick={clickInTitleCatalogue}>{props.title}</Link>
+                <Link to={`/productos/catalogo/${props.title}`} onClick={clickInTitleCatalogue}>{props.title}</Link>
                 <i className="fa-solid fa-caret-down"></i>
             </Accordion.Header>
             <Accordion.Body className='sideBar_section2_menu_accordion_item_body'>
@@ -21,7 +21,7 @@ export default function SideBarSection2Menu(props) {
                             <Accordion.Item eventKey={`${index}`} className='sideBar_section2_menu_accordion_item' key={index}>
                                 <hr className={`sidebar_section2_divider sidebar_section2_divider_${index}`} />
                                 <Accordion.Header className='sideBar_section2_menu_accordion_item_header'>
-                                    <Link to={"/productos/catalogo/" + props.title} onClick={clickInTitleCatalogue}>{sub}</Link>
+                                    <Link to={`/productos/catalogo/${props.title}/${sub}`} onClick={clickInTitleCatalogue}>{sub}</Link>
                                     <i className="fa-solid fa-caret-down"></i>
                                 </Accordion.Header>
                                 <Accordion.Body className='sideBar_section2_menu_accordion_item_body'>
@@ -30,7 +30,7 @@ export default function SideBarSection2Menu(props) {
                                             <Accordion.Item eventKey={`${index}`} className='sideBar_section2_menu_accordion_item' key={index}>
                                                 <hr className={`sidebar_section2_divider sidebar_section2_divider_${index}`} />
                                                 <Accordion.Header className='sideBar_section2_menu_accordion_item_header'>
-                                                    <Link to={"/productos/catalogo/" + props.title} onClick={clickInTitleCatalogue}>{subSub}</Link>
+                                                    <Link to={`/productos/catalogo/${props.title}/${sub}/${subSub}`} onClick={clickInTitleCatalogue}>{subSub}</Link>
                                                 </Accordion.Header>
                                             </Accordion.Item>
                                         ))}
@@ -41,7 +41,7 @@ export default function SideBarSection2Menu(props) {
                             <Accordion.Item eventKey={`${index}`} className='sideBar_section2_menu_accordion_item' key={index}>
                                 <hr className={`sidebar_section2_divider sidebar_section2_divider_${index}`} />
                                 <Accordion.Header className='sideBar_section2_menu_accordion_item_header'>
-                                    <Link to={"/productos/catalogo/" + props.title} onClick={clickInTitleCatalogue}>{sub}</Link>
+                                    <Link to={`/productos/catalogo/${props.title}/${sub}`} onClick={clickInTitleCatalogue}>{sub}</Link>
                                 </Accordion.Header>
                             </Accordion.Item>
                     ))}
