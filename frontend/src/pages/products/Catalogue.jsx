@@ -1,5 +1,8 @@
 import React from 'react'
 import "./Products.css"
+
+import HomeSectionSecPag from '../../components/secondaryPages/HomeSectionSecPag';
+
 import { useParams } from "react-router-dom";
 
 export default function Catalogue() {
@@ -8,8 +11,7 @@ export default function Catalogue() {
   return (
     <div className='Products_container'>
             <section className='Products_container_section1'>
-                Catalogo de la categoria {category.categoria}
-
+                <HomeSectionSecPag  title={category.categoria} subTitle={category.subcategoria} article={category.article}/>
             </section>
         </div>
   )

@@ -33,6 +33,8 @@ const router = createBrowserRouter(
 
           {/* PRODUCTS */}
           <Route path='/productos/catalogo/:categoria' exact={true} element={<Catalogue/>}/>
+          <Route path='/productos/catalogo/:categoria/:subcategoria' exact={true} element={<Catalogue/>}/>
+          <Route path='/productos/catalogo/:categoria/:subcategoria/:article' exact={true} element={<Catalogue/>}/>
 
           {/* USERS */}
           <Route path='/usuarios/ingresar' exact={true} element={<Login/>}/>
